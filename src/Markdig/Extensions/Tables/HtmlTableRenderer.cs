@@ -18,7 +18,7 @@ namespace Markdig.Extensions.Tables
         protected override void Write(HtmlRenderer renderer, Table table)
         {
             renderer.EnsureLine();
-            renderer.Write("<table").WriteAttributes(table).WriteLine(">");
+            renderer.Write("<table class=\"bxstyle\"").WriteAttributes(table).WriteLine(">");
 
             bool hasBody = false;
             bool hasAlreadyHeader = false;
