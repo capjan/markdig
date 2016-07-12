@@ -126,6 +126,62 @@ namespace Markdig.Renderers
             {
                 switch (content[offset])
                 {
+                    case '�':
+                        Write(content, previousOffset, offset - previousOffset);
+                        if (EnableHtmlEscape)
+                        {
+                            Write("&auml;");
+                        }
+                        previousOffset = offset + 1;
+                        break;
+                    case '�':
+                        Write(content, previousOffset, offset - previousOffset);
+                        if (EnableHtmlEscape)
+                        {
+                            Write("&Auml;");
+                        }
+                        previousOffset = offset + 1;
+                        break;
+                    case '�':
+                        Write(content, previousOffset, offset - previousOffset);
+                        if (EnableHtmlEscape)
+                        {
+                            Write("&ouml;");
+                        }
+                        previousOffset = offset + 1;
+                        break;
+                    case '�':
+                        Write(content, previousOffset, offset - previousOffset);
+                        if (EnableHtmlEscape)
+                        {
+                            Write("&Ouml;");
+                        }
+                        previousOffset = offset + 1;
+                        break;
+                    case '�':
+                        Write(content, previousOffset, offset - previousOffset);
+                        if (EnableHtmlEscape)
+                        {
+                            Write("&uuml;");
+                        }
+                        previousOffset = offset + 1;
+                        break;
+                    case '�':
+                        Write(content, previousOffset, offset - previousOffset);
+                        if (EnableHtmlEscape)
+                        {
+                            Write("&Uuml;");
+                        }
+                        previousOffset = offset + 1;
+                        break;
+                    case '�':
+                        Write(content, previousOffset, offset - previousOffset);
+                        if (EnableHtmlEscape)
+                        {
+                            Write("&szlig;");
+                        }
+                        previousOffset = offset + 1;
+                        break;
                     case '<':
                         Write(content, previousOffset, offset - previousOffset);
                         if (EnableHtmlEscape)
